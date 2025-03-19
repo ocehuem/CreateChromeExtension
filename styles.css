@@ -1,0 +1,169 @@
+
+.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Apply dark mode colors to all text-based elements */
+.dark-mode p, 
+.dark-mode span, 
+.dark-mode div, 
+.dark-mode li, 
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6, 
+.dark-mode strong, 
+.dark-mode em, 
+.dark-mode blockquote, 
+.dark-mode code, 
+.dark-mode table, 
+.dark-mode th, 
+.dark-mode td {
+    color: #eaeceb !important;
+    background-color: #121212 !important;
+}
+
+/* Ensure links are visible */
+.dark-mode a {
+    color: #fb78c9 !important;
+    text-decoration: underline;
+    background-color: #121212 !important;
+}
+
+/* Dark mode buttons */
+.dark-mode button
+ {
+    background-color: #333 !important;
+    color: rgb(134, 133, 133) !important;
+    border: 1px solid gray !important;
+}
+.dark-mode input, 
+.dark-mode select, 
+.dark-mode textarea {
+    background-color: #333 !important;
+    color: rgb(153, 80, 80) !important;
+    border: 1px solid rgb(193, 191, 191) !important;
+}
+/* Keep images and videos unchanged */
+.dark-mode img, 
+.dark-mode video, 
+.dark-mode iframe {
+    filter: none !important;
+}
+
+/* High Contrast */
+.high-contrast {
+    background-color: black !important;
+    color: yellow !important;
+    filter:  contrast(10.2);
+
+}
+
+/* Apply high contrast mode to all elements */
+.high-contrast p, 
+.high-contrast span, 
+.high-contrast div, 
+.high-contrast li, 
+.high-contrast h1, 
+.high-contrast h2, 
+.high-contrast h3, 
+.high-contrast h4, 
+.high-contrast h5, 
+.high-contrast h6, 
+.high-contrast strong, 
+.high-contrast em, 
+.high-contrast blockquote, 
+.high-contrast code, 
+.high-contrast table, 
+.high-contrast th, 
+.high-contrast td {
+    
+    filter:  contrast(10.2);
+}
+
+/* High contrast links */
+.high-contrast a {
+    color: cyan !important;
+    font-weight: bold;
+}
+
+/* High contrast buttons */
+.high-contrast button, 
+.high-contrast input, 
+.high-contrast select, 
+.high-contrast textarea {
+    background-color: yellow !important;
+    color: black !important;
+    border: 2px solid rgb(64, 53, 53) !important;
+}
+
+/* Keep images and videos unchanged */
+.high-contrast img, 
+.high-contrast video, 
+.high-contrast iframe {
+    filter: brightness(0.8) contrast(1.2);
+}
+
+/* Reverse Colors */
+.reverse-colors {
+    filter: invert(1) hue-rotate(180deg) !important;
+}
+
+/* Apply reverse colors but keep images & videos normal */
+.reverse-colors img, 
+.reverse-colors video, 
+.reverse-colors iframe {
+    filter: invert(1) hue-rotate(180deg) !important;
+}
+
+/* Custom Theme */
+.custom-theme {
+    background-color: #282828 !important;
+    color: #F8F8F8 !important;
+}
+
+/* Apply custom theme colors to all elements */
+.custom-theme p, 
+.custom-theme span, 
+.custom-theme div, 
+.custom-theme li, 
+.custom-theme h1, 
+.custom-theme h2, 
+.custom-theme h3, 
+.custom-theme h4, 
+.custom-theme h5, 
+.custom-theme h6, 
+.custom-theme strong, 
+.custom-theme em, 
+.custom-theme blockquote, 
+.custom-theme code, 
+.custom-theme table, 
+.custom-theme th, 
+.custom-theme td {
+    color: lightgray !important;
+}
+
+/* Custom theme links */
+.custom-theme a {
+    color: lightblue !important;
+}
+
+/* Custom theme buttons */
+.custom-theme button, 
+.custom-theme input, 
+.custom-theme select, 
+.custom-theme textarea {
+    background-color: #444 !important;
+    color: white !important;
+    border: 1px solid gray !important;
+}
+
+/* Keep images and videos unchanged */
+.custom-theme img, 
+.custom-theme video, 
+.custom-theme iframe {
+    filter: none !important;
+}
