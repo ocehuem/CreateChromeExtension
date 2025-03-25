@@ -8,7 +8,8 @@
 .dark-mode p, 
 .dark-mode span, 
 .dark-mode div, 
-.dark-mode li, 
+.dark-mode li,
+.dark-mode ul,
 .dark-mode h1, 
 .dark-mode h2, 
 .dark-mode h3, 
@@ -58,7 +59,7 @@
 .high-contrast {
     background-color: black !important;
     color: yellow !important;
-    filter:  contrast(10.2);
+    filter:  contrast(7.4);
 
 }
 
@@ -67,6 +68,7 @@
 .high-contrast span, 
 .high-contrast div, 
 .high-contrast li, 
+.high-contrast ul,
 .high-contrast h1, 
 .high-contrast h2, 
 .high-contrast h3, 
@@ -143,7 +145,7 @@
 .custom-theme table, 
 .custom-theme th, 
 .custom-theme td {
-    color: lightgray !important;
+    color:  !important;
 }
 
 /* Custom theme links */
