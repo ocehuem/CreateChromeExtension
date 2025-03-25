@@ -13,7 +13,19 @@ document.getElementById("reverseColors").addEventListener("click", () => {
 document.getElementById("customTheme").addEventListener("click", () => {
     sendMessage("toggleCustomTheme");
 });
-function sendMessage(action) {
+
+document.getElementById("fontSelector").addEventListener("change", (event) => {
+    sendMessage("changeFont", event.target.value);
+});
+document.getElementById("increaseTextSize").addEventListener("click", () => {
+    sendMessage("adjustTextSize", "increase");
+});
+
+document.getElementById("decreaseTextSize").addEventListener("click", () => {
+    sendMessage("adjustTextSize", "decrease");
+});
+
+function sendMessage(action, value = null) {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         if (!tabs || tabs.length === 0 || tabs[0].url.startsWith("chrome://")) {
             alert("⚠️ This extension does not work on Chrome system pages.");
@@ -23,7 +35,7 @@ function sendMessage(action) {
         chrome.scripting.executeScript({
             target: { tabId: tabs[0].id },
             function: applyStyle,
-            args: [action]
+            args: [action, value]
         }).catch((error) => {
             console.error("Error applying style:", error);
             alert("⚠️ Cannot modify this page due to Chrome's security restrictions.");
@@ -31,7 +43,7 @@ function sendMessage(action) {
     });
 }
 
-function applyStyle(action) {
+function applyStyle(action, value) {
     switch (action) {
         case "toggleDarkMode":
             document.body.classList.toggle("dark-mode");
@@ -45,5 +57,13 @@ function applyStyle(action) {
         case "toggleCustomTheme":
             document.body.classList.toggle("custom-theme");
             break;
+        case "changeFont":
+            document.body.style.fontFamily = value;
+            break;
+        case "adjustTextSize":
+            let body = document.body;
+            let currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue("font-size"));
+            let newSize = value === "increase" ? currentSize * 1.1 : currentSize * 0.9;
+            body.style.fontSize = `${newSize}px`;                break;
     }
 }
