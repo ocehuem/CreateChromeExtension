@@ -8,7 +8,7 @@
 .dark-mode p, 
 .dark-mode span, 
 .dark-mode div, 
-.dark-mode li,
+.dark-mode li, 
 .dark-mode ul,
 .dark-mode h1, 
 .dark-mode h2, 
@@ -67,8 +67,8 @@
 .high-contrast p, 
 .high-contrast span, 
 .high-contrast div, 
-.high-contrast li, 
-.high-contrast ul,
+.high-contrast li,
+.high-contrast ul, 
 .high-contrast h1, 
 .high-contrast h2, 
 .high-contrast h3, 
@@ -145,7 +145,7 @@
 .custom-theme table, 
 .custom-theme th, 
 .custom-theme td {
-    color:  !important;
+    color:  rgb(193, 190, 190)!important;
 }
 
 /* Custom theme links */
