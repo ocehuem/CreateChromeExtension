@@ -34,18 +34,6 @@ A simple and powerful Chrome extension that enhances your browsing experience by
 - Use the popup to toggle features (dark mode, font change, etc.).
 - Your settings are applied instantly to the active tab.
 
-## 📁 Project Structure
-
-```
-web-customizer-extension/
-│
-├── manifest.json         # Extension metadata
-├── popup.html            # UI for extension popup
-├── popup.js              # Logic for popup interactions
-├── content.js            # Script injected into web pages
-├── styles.css            # Custom styles for UI and web content
-└── icons/                # Extension icons
-```
 
 ## 🧩 Permissions
 
